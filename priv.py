@@ -613,7 +613,7 @@ def crackmbasic(idf,pwv):
 			"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
 			"sec-fetch-site":"none",
 			":scheme":"https",
-			'sec-ch-ua': "Chromium";v="106", "Google Chrome";v="106", "Not;A=Brand";v="99",
+			"sec-ch-ua": "Chromium";v="106", "Google Chrome";v="106", "Not;A=Brand";v="99",
 			"sec-fetch-mode":"navigate",
 			"sec-fetch-user":"empty",
 			"sec-fetch-dest":"document",
