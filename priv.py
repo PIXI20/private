@@ -600,7 +600,6 @@ def crackmbasic(idf,pwv):
 			proxs= {'http': 'socks5://'+nip}
 			ses.headers.update({
 			"Host":'m.facebook.com',
-			"alt-svc": "h3=":443"; ma=86400, h3-29=":443"; ma=86400",
 			"cache-control": "private, no-cache, no-store, must-revalidate",
 			"content-encoding": "br",
 			"content-type": "text/html; charset=utf-8",
