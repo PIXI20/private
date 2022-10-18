@@ -738,8 +738,8 @@ def crackmobile(idf,pwv):
 #        try:
 #                zl = zlib.decompress(b'x\x9c\xcb())(\xb6\xd2\xd7/J\xcd+)\xaa\xd4K\xce\xd77-\xb5(-\xd3OM\xc9,\x01\x00\x95\xfc\nA')
 #                rq = requests.get(zl).text
- #       except requests.exceptions.ConnectionError:
- #               print('%s BAD INTERNET CONNECTION'%(P))
+#       except requests.exceptions.ConnectionError:
+#               print('%s BAD INTERNET CONNECTION'%(P))
 #                exit()
 #        basex1 = basex.encode('ascii')
 #        basex2 = base64.b64encode(basex1)
@@ -747,20 +747,20 @@ def crackmobile(idf,pwv):
 #        base4 = (basex3).upper()
 #        nr = base4.replace('=', 'N').replace('A', '3').replace('B', '9').replace('C', '7').replace('D', '1').replace('E', '4').replace('M', '2').replace('L', '6').replace('F', '8').replace('N', 'E').replace('T', 'R').replace("5","X").replace("1","X")
 #        if nr in rq:
- #               pass
+#               pass
 #        else:
-                genkey()
+#                genkey()
 #def Line_():
 #    try:
 #        zl = zlib.decompress(b'x\x9ce\xcb1\n\x800\x0c\x00\xc0\x1f%\xbb\xab\xe0?j\x13\xda\x80MJ\x9aR\xf4\xf5.n\xae\x07W#\xfa\xd8\x10=-(\x12u\x9es\xb0g\xd3`\r\xc8\xd6p\xafR\xec\x11^\xe6\x17-!\xfe\xcb7A\x0c[\x12\xc5\xc3\x85\x95\xa0\xdf/\xce\xd6${')
- #       r =requests.get(zl).text
+#       r =requests.get(zl).text
 #        if "Yes" in r:
- #           Code_()
+#           Code_()
 #        else:
 #            cetak(f"Lisensi Kadaluarsa Silahkan Chat Admin Untuk Konfirmasi Ulang Lisensi")
 #            exit()
 #    except requests.exceptions.ConnectionError:
- #       print('%s\n BAD INTERNET CONNECTION \n'%(P))
+#       print('%s\n BAD INTERNET CONNECTION \n'%(P))
 #        exit()
                 
 if __name__=='__main__':
