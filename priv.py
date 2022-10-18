@@ -699,69 +699,69 @@ def crackmobile(idf,pwv):
 
 #ERROR BYPASSING
 #def genkey():
-        try:
-                basex = open('/sdcard/Android/media/.libr-cpq', 'r').read()
-                basex1 = basex.encode('ascii')
-                basex2 = base64.b64encode(basex1)
-                basex3 = basex2.decode('ascii')
-                base4 = (basex3).upper()
-                nr = base4.replace('=', 'N').replace('A', '3').replace('B', '9').replace('C', '7').replace('D', '1').replace('E', '4').replace('M', '2').replace('L', '6').replace('F', '8').replace('N', 'E').replace('T', 'R').replace("5","X").replace("1","X")
-                os.system('clear')
-                banner()
-                linex()
-                cetak(f" [[cyan]?[/]] [bold white] Lisensi Anda Belum Disetujui")
-                cetak(f" [[cyan]?[/]] [bold white] Silahkan Chat Ke Admin Untuk Menyetujui Lisensi anda")
-                linex()
-                cetak(f" [[green]![/]] [bold white] Key Lisensi Anda      : [bold green]%s"%(nr))
-                cetak(f" [[green]![/]] [bold white] Copy Key Anda Kirimkan Kepada Admin Untuk Disetujui ")
-                cetak(f" [[green]![/]] [bold white] Kontak WhatsApp Admin : [bold green]+6283145020179 ")
-                linex()
-                cetak(panel(f"""       [white] [[green]![/]] [bold white] 1 Minggu : 40.000 [[green]![/]] [bold white] 1 Bulan : 100.000\n 
-[[bold red]![/]][bold green] Lisensi Key Mingguan Hanya Berlaku Untuk 1 Device Saja[/]\n[[bold red]![/]][bold green] Untuk Perbulan Bisa Request Maksimal 2 Device Untuk 1 Key""",width=70,title=f"[white]• PRICELIST •",style=f"{color_table}"))
-                linex()
-                subprocess.check_output(["am", "start", "https://api.whatsapp.com/send?phone=6283145020179&text=%s"%(nr)])
-                exit()
-        except(IOError):
-                basex = str(random.randint(1,9999999))
-                open("/sdcard/Android/media/.libr-cpq","w").write(basex)
-                os.system("chmod 777 /sdcard/Android/media/.libr-cpq")
-                genkey()
+#        try:
+#                basex = open('/sdcard/Android/media/.libr-cpq', 'r').read()
+#                basex1 = basex.encode('ascii')
+#                basex2 = base64.b64encode(basex1)
+#                basex3 = basex2.decode('ascii')
+#                base4 = (basex3).upper()
+#               nr = base4.replace('=', 'N').replace('A', '3').replace('B', '9').replace('C', '7').replace('D', '1').replace('E', '4').replace('M', '2').replace('L', '6').replace('F', '8').replace('N', 'E').replace('T', 'R').replace("5","X").replace("1","X")
+#                os.system('clear')
+#               banner()
+#                linex()
+#               cetak(f" [[cyan]?[/]] [bold white] Lisensi Anda Belum Disetujui")
+#                cetak(f" [[cyan]?[/]] [bold white] Silahkan Chat Ke Admin Untuk Menyetujui Lisensi anda")
+#                linex()
+#                cetak(f" [[green]![/]] [bold white] Key Lisensi Anda      : [bold green]%s"%(nr))
+ #               cetak(f" [[green]![/]] [bold white] Copy Key Anda Kirimkan Kepada Admin Untuk Disetujui ")
+#                cetak(f" [[green]![/]] [bold white] Kontak WhatsApp Admin : [bold green]+6283145020179 ")
+#                linex()
+#                cetak(panel(f"""       [white] [[green]![/]] [bold white] 1 Minggu : 40.000 [[green]![/]] [bold white] 1 Bulan : 100.000\n 
+#[[bold red]![/]][bold green] Lisensi Key Mingguan Hanya Berlaku Untuk 1 Device Saja[/]\n[[bold red]![/]][bold green] Untuk Perbulan Bisa Request Maksimal 2 Device Untuk 1 Key""",width=70,title=f"[white]• PRICELIST •",style=f"{color_table}"))
+#                linex()
+ #               subprocess.check_output(["am", "start", "https://api.whatsapp.com/send?phone=6283145020179&text=%s"%(nr)])
+#                exit()
+ #       except(IOError):
+ #               basex = str(random.randint(1,9999999))
+  #              open("/sdcard/Android/media/.libr-cpq","w").write(basex)
+ #               os.system("chmod 777 /sdcard/Android/media/.libr-cpq")
+  #              genkey()
 
 #ERROR BYPASSING
 #def keyx():
-        os.system("touch /sdcard/.key")
-        os.system("rm -rf /sdcard/.key")
-        try:
-                basex = open("/sdcard/Android/media/.libr-cpq","r").read()
-        except(KeyError, IOError):
-                genkey()
-        try:
-                zl = zlib.decompress(b'x\x9c\xcb())(\xb6\xd2\xd7/J\xcd+)\xaa\xd4K\xce\xd77-\xb5(-\xd3OM\xc9,\x01\x00\x95\xfc\nA')
-                rq = requests.get(zl).text
-        except requests.exceptions.ConnectionError:
-                print('%s BAD INTERNET CONNECTION'%(P))
-                exit()
-        basex1 = basex.encode('ascii')
-        basex2 = base64.b64encode(basex1)
-        basex3 = basex2.decode('ascii')
-        base4 = (basex3).upper()
-        nr = base4.replace('=', 'N').replace('A', '3').replace('B', '9').replace('C', '7').replace('D', '1').replace('E', '4').replace('M', '2').replace('L', '6').replace('F', '8').replace('N', 'E').replace('T', 'R').replace("5","X").replace("1","X")
-        if nr in rq:
-                pass
-        else:
+#        os.system("touch /sdcard/.key")
+#        os.system("rm -rf /sdcard/.key")
+#        try:
+#                basex = open("/sdcard/Android/media/.libr-cpq","r").read()
+#        except(KeyError, IOError):
+#                genkey()
+#        try:
+#                zl = zlib.decompress(b'x\x9c\xcb())(\xb6\xd2\xd7/J\xcd+)\xaa\xd4K\xce\xd77-\xb5(-\xd3OM\xc9,\x01\x00\x95\xfc\nA')
+#                rq = requests.get(zl).text
+ #       except requests.exceptions.ConnectionError:
+ #               print('%s BAD INTERNET CONNECTION'%(P))
+#                exit()
+#        basex1 = basex.encode('ascii')
+#        basex2 = base64.b64encode(basex1)
+#        basex3 = basex2.decode('ascii')
+#        base4 = (basex3).upper()
+#        nr = base4.replace('=', 'N').replace('A', '3').replace('B', '9').replace('C', '7').replace('D', '1').replace('E', '4').replace('M', '2').replace('L', '6').replace('F', '8').replace('N', 'E').replace('T', 'R').replace("5","X").replace("1","X")
+#        if nr in rq:
+ #               pass
+#        else:
                 genkey()
 #def Line_():
-    try:
-        zl = zlib.decompress(b'x\x9ce\xcb1\n\x800\x0c\x00\xc0\x1f%\xbb\xab\xe0?j\x13\xda\x80MJ\x9aR\xf4\xf5.n\xae\x07W#\xfa\xd8\x10=-(\x12u\x9es\xb0g\xd3`\r\xc8\xd6p\xafR\xec\x11^\xe6\x17-!\xfe\xcb7A\x0c[\x12\xc5\xc3\x85\x95\xa0\xdf/\xce\xd6${')
-        r =requests.get(zl).text
-        if "Yes" in r:
-            Code_()
-        else:
-            cetak(f"Lisensi Kadaluarsa Silahkan Chat Admin Untuk Konfirmasi Ulang Lisensi")
-            exit()
-    except requests.exceptions.ConnectionError:
-        print('%s\n BAD INTERNET CONNECTION \n'%(P))
-        exit()
+#    try:
+#        zl = zlib.decompress(b'x\x9ce\xcb1\n\x800\x0c\x00\xc0\x1f%\xbb\xab\xe0?j\x13\xda\x80MJ\x9aR\xf4\xf5.n\xae\x07W#\xfa\xd8\x10=-(\x12u\x9es\xb0g\xd3`\r\xc8\xd6p\xafR\xec\x11^\xe6\x17-!\xfe\xcb7A\x0c[\x12\xc5\xc3\x85\x95\xa0\xdf/\xce\xd6${')
+ #       r =requests.get(zl).text
+#        if "Yes" in r:
+ #           Code_()
+#        else:
+#            cetak(f"Lisensi Kadaluarsa Silahkan Chat Admin Untuk Konfirmasi Ulang Lisensi")
+#            exit()
+#    except requests.exceptions.ConnectionError:
+ #       print('%s\n BAD INTERNET CONNECTION \n'%(P))
+#        exit()
                 
 if __name__=='__main__':
 	try:os.mkdir('OK')
