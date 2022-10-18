@@ -47,7 +47,7 @@ for x in range(1000):
     a7 = f'Mozilla/5.0 (Linux; U; Android {str(rc(a))} {str(rc(b))} XQ- {str(rc(az))}{str(rc(az))}{str(rr(11,999))} Build/{str(rc(c))}.{str(rr(100000,999999))}.020; wv) AppleWebKit/{str(rr(111,999))}.{str(rr(1,999))} (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(10,999))}.0.{str(rr(1000,9999))}.{str(rr(10,999))} Mobile Safari/{str(rr(111,999))}.{str(rr(1,999))}'
     a8 = f'Mozilla/5.0 (Linux; U; Android {str(rc(a))} {str(rc(b))} ASUS{str(rc(az))}00{str(rc(az))}) Build/{str(rc(c))}.{str(rr(100000,999999))}.020; wv) AppleWebKit/{str(rr(111,999))}.{str(rr(1,999))} (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(10,999))}.0.{str(rr(1000,9999))}.{str(rr(10,999))} Mobile Safari/{str(rr(111,999))}.{str(rr(1,999))}'
     uaku =f'{a5}'
-    ugen2.append(uaku)
+    ugen.append(uaku)
 
     aa='Mozilla/5.0 (Linux; U; Android'
     b=random.choice(['6','7','8','9','10','11','12'])
@@ -62,7 +62,7 @@ for x in range(1000):
     k=random.randrange(40,150)
     l='Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.6.4-gn'
     uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
-    ugen.append(uaku2)
+    ugen2.append(uaku2)
 for x in range(10):
 	a='Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S'
 	b=random.randrange(100, 9999)
@@ -505,7 +505,7 @@ def crack(idf,pwv):
 	global loop,ok,cp
 	prog.update(des,description=f"[white]crack {str(loop)}/{len(id2)} OK-: [bold green]{ok}[/] CP-: [bold yellow]{cp}[/]")
 	prog.advance(des)
-	ua = random.choice(ugen2)
+	ua = random.choice(ugen)
 	ses = requests.Session()
 	for pw in pwv:
 		try:
