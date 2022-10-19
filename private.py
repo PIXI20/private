@@ -38,8 +38,8 @@ for x in range(1000):
 	B = f'{str(rr(111111,199999))}.011; en-us) AppleWebKit/537.36 '
 	C = f'(KHTML, like Gecko) UCBrowser/79.0.{str(rr(1111,9999))}.136 Mobile Safari'
 	D = f'/537.36 Puffin/9.7.2.{str(rr(11111,99999))}AP'
-	uaku = f'{A}{B}{C}{D}'
-	ugen.append(uaku)
+	uaku2 = f'{A}{B}{C}{D}'
+	ugen2.append(uaku2)
 
 	aa='Mozilla/5.0 (Linux; U; Android;'
 	b=random.choice(['10','11','12'])
@@ -53,8 +53,8 @@ for x in range(1000):
 	j=random.randrange(4200,4900)
 	k=random.randrange(40,150)
 	l='Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.10.0-gn'
-	uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
-	ugen2.append(uaku2)
+	uaku=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
+	ugen.append(uaku)
 
 for x in range(10):
 	a='Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S'
@@ -498,7 +498,7 @@ def crack(idf,pwv):
 	global loop,ok,cp
 	prog.update(des,description=f"[white]crack {str(loop)}/{len(id2)} OK-: [bold green]{ok}[/] CP-: [bold yellow]{cp}[/]")
 	prog.advance(des)
-	ua = random.choice(ugen2)
+	ua = random.choice(ugen)
 	ses = requests.Session()
 	for pw in pwv:
 		try:
@@ -655,7 +655,7 @@ def crackmobile(idf,pwv):
 	global loop,ok,cp
 	prog.update(des,description=f"[white]crack {str(loop)}/{len(id2)} OK-: [bold green]{ok}[/] CP-: [bold yellow]{cp}[/]")
 	prog.advance(des)
-	ua = random.choice(ugen2)
+	ua = random.choice(ugen)
 	ses = requests.Session()
 	for pw in pwv:
 		try:
