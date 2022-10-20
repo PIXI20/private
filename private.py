@@ -31,7 +31,7 @@ try:
 	open('.proxy.txt','w').write(prox)
 except Exception as e:
     exit(e)
-for x in range(1000):
+for x in range(10000):
     rr = random.randint
     rc = random.choice
     a = ['2.3.6;','4.0.4;','4.2.1;','4.2.2;','4.3;','4.4.2;','4.4.4;','5.0;','5.0.2;','5.1;','5.1.1;','6.0;','6;','6.0.1;','7.0;','7.0.1;','7;','8;','8.0;','8.0.1;','9;','10;','11;','12;']
@@ -46,7 +46,7 @@ for x in range(1000):
     a6 = f'Mozilla/5.0 (Linux; U; Android {str(rc(a))} {str(rc(b))} {str(rr(1000000,9999999))}) Build/{str(rc(c))}.{str(rr(100000,999999))}.001; wv) AppleWebKit/{str(rr(111,999))}.{str(rr(1,999))} (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(10,999))}.0.{str(rr(1000,9999))}.{str(rr(10,999))} Mobile Safari/{str(rr(111,999))}.{str(rr(1,999))}'
     a7 = f'Mozilla/5.0 (Linux; U; Android {str(rc(a))} {str(rc(b))} XQ- {str(rc(az))}{str(rc(az))}{str(rr(11,999))} Build/{str(rc(c))}.{str(rr(100000,999999))}.020; wv) AppleWebKit/{str(rr(111,999))}.{str(rr(1,999))} (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(10,999))}.0.{str(rr(1000,9999))}.{str(rr(10,999))} Mobile Safari/{str(rr(111,999))}.{str(rr(1,999))}'
     a8 = f'Mozilla/5.0 (Linux; U; Android {str(rc(a))} {str(rc(b))} ASUS{str(rc(az))}00{str(rc(az))}) Build/{str(rc(c))}.{str(rr(100000,999999))}.020; wv) AppleWebKit/{str(rr(111,999))}.{str(rr(1,999))} (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(10,999))}.0.{str(rr(1000,9999))}.{str(rr(10,999))} Mobile Safari/{str(rr(111,999))}.{str(rr(1,999))}'
-    uaku =f'{a5}'
+    uaku =f'{a4}'
     ugen.append(uaku)
 
     aa='Mozilla/5.0 (Linux; U; Android'
@@ -63,21 +63,6 @@ for x in range(1000):
     l='Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.6.4-gn'
     uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
     ugen2.append(uaku2)
-for x in range(10):
-	a='Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S'
-	b=random.randrange(100, 9999)
-	c=random.randrange(100, 9999)
-	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	e=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	g=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	h=random.randrange(1, 9)
-	i='; U; Bada/1.2; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/'
-	j=random.randrange(1, 9)
-	k=random.randrange(1, 9)
-	l='Mobile WVGA SMM-MMS/1.2.0 OPN-B'
-	uak=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {l}'
-	ugen.append(uak)
 def uaku():
 	try:
 		ua=open('bbnew.txt','r').read().splitlines()
