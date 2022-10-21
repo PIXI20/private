@@ -611,7 +611,7 @@ def dump_grup(url):
 akunok = []
 def atur_atur():
 	print(f"\r{P}╠────────────────────────────────────────────────────────────────╣")
-	ro = input(f'╠───[{hh}1{P}]. Mobile \n╠───[{hh}?{P}]. Pilih Metode : ')
+	ro = input(f'╠───[{hh}1{P}]. Mobile\n╠───[{hh}2{P}]. Mbasic\n╠───[{hh}3{P}]. Free\n╠───[{hh}?{P}]. Pilih Metode : ')
 	if ro in ['1','01']:metode.append('mobile')
 	elif ro in ['2','02']:metode.append('mbasic')
 	elif ro in ['3','03']:metode.append('free')
